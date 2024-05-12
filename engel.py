@@ -35,4 +35,6 @@ def take_command():
 if __name__ == '__main__':
      speak("Engel is here ")
      speak("How can i help you")
-while True
+while True:
+     query = take_command().lower()
+     
