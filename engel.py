@@ -3,6 +3,7 @@ import os
 import speech_recognition as sr
 import wikipedia
 import pyttsx3 
+import pyaudio
 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
@@ -45,4 +46,4 @@ while True:
             speak(results)
      elif 'who are you' in query:
             speak("Hi you are talking to Engel. I was developed by Diya Chakraborty.") 
-       
+     
