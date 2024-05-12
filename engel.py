@@ -18,7 +18,7 @@ def take_command():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
-        r.pause_threshold = 1
+        # r.pause_threshold = 1
         audio = r.listen(source)
 
     try:
@@ -36,31 +36,42 @@ def take_command():
 if __name__ == '__main__':
      speak("Engel is here ")
      speak("How can i help you")
-while True:
-     query = take_command().lower()
-     if 'wikipedia' in query:
+     while True:
+      query = take_command().lower()
+      if 'wikipedia' in query:
             speak("Searching Wikipedia ...")
             query = query.replace("wikipedia", '')
             results = wikipedia.summary(query, sentences=2)
             speak("According to wikipedia")
             speak(results)
-     elif 'who are you' in query:
+      elif 'who are you' in query:
             speak("Hi you are talking to Engel. I was developed by Diya Chakraborty.") 
-     elif 'open youtube' in query:
+      elif 'open youtube' in query:
             speak("opening youtube")
             webbrowser.open("youtube.com")
-     elif 'open youtube' in query:
+      elif 'open youtube' in query:
             speak("opening youtube")
             webbrowser.open("youtube.com")
-     elif 'open google' in query:
+      elif 'open google' in query:
             speak("opening google")
             webbrowser.open("google.com")
-     elif 'open github' in query:
+      elif 'open github' in query:
             speak("opening github")
             webbrowser.open("github.com")
-     elif 'open stackoverflow' in query:
+      elif 'open stackoverflow' in query:
             speak("opening stackoverflow")
             webbrowser.open("stackoverflow.com")
-     elif 'open spotify' in query:
+      elif 'open spotify' in query:
             speak("opening spotify")
             webbrowser.open("spotify.com")
+      elif 'local disk d' in query:
+            speak("opening local disk D")
+            webbrowser.open("D://")
+      elif 'local disk c' in query:
+            speak("opening local disk C")
+            webbrowser.open("C://")
+      elif 'local disk e' in query:
+            speak("opening local disk E")
+            webbrowser.open("E://")
+      elif 'sleep' in query:
+            exit(0)
