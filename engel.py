@@ -43,3 +43,6 @@ while True:
             results = wikipedia.summary(query, sentences=2)
             speak("According to wikipedia")
             speak(results)
+     elif 'who are you' in query:
+            speak("Hi you are talking to Engel. I was developed by Diya Chakraborty.") 
+       
