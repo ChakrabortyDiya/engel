@@ -46,4 +46,21 @@ while True:
             speak(results)
      elif 'who are you' in query:
             speak("Hi you are talking to Engel. I was developed by Diya Chakraborty.") 
-     
+     elif 'open youtube' in query:
+            speak("opening youtube")
+            webbrowser.open("youtube.com")
+     elif 'open youtube' in query:
+            speak("opening youtube")
+            webbrowser.open("youtube.com")
+     elif 'open google' in query:
+            speak("opening google")
+            webbrowser.open("google.com")
+     elif 'open github' in query:
+            speak("opening github")
+            webbrowser.open("github.com")
+     elif 'open stackoverflow' in query:
+            speak("opening stackoverflow")
+            webbrowser.open("stackoverflow.com")
+     elif 'open spotify' in query:
+            speak("opening spotify")
+            webbrowser.open("spotify.com")
