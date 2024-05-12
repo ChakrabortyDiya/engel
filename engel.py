@@ -12,3 +12,7 @@ engine.setProperty('voice', voices[1].id)
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
+
+def take_command():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
