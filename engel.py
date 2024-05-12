@@ -32,3 +32,7 @@ def take_command():
     
     return query
 
+if __name__ == '__main__':
+     speak("Engel is here ")
+     speak("How can i help you")
+while True
